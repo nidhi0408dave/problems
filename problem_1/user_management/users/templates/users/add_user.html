@@ -1,0 +1,7 @@
+<h1>Add User</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    {{ user_info_form.as_p }}
+    <button type="submit">Add User</button>
+</form>
